@@ -1,12 +1,12 @@
 var translateButton = document.querySelector("#translate-button");
-var translateInput = document.querySelector("#translate-button");
+var translateInput = document.querySelector("#translate-input");
 var translateOutput = document.querySelector("#translate-output");
 translateButton.addEventListener("click", buttonClickHandler)
 
 var serverurl = "https://api.funtranslations.com/translate/doge.json"
 
 function getTranslationURL(input){
-    return serverurl+"?"+"text="+input
+    return serverurl+"?"+"text=" + input
 }
 
 function errorHandler(error){
